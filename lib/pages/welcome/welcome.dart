@@ -20,7 +20,7 @@ class _WelcomePageState extends State<WelcomePage> {
         textAlign: TextAlign.center,
         style: TextStyle(
           color: AppColors.primaryText,
-          fontFamily: "Montserrat",
+          fontFamily: AppFonts.Montserrat,
           fontWeight: FontWeight.w600,
           fontSize: duSetFontSize(24),
         ),
@@ -39,7 +39,7 @@ class _WelcomePageState extends State<WelcomePage> {
         textAlign: TextAlign.center,
         style: TextStyle(
           color: AppColors.primaryText,
-          fontFamily: "Avenir",
+          fontFamily: AppFonts.Avenir,
           fontWeight: FontWeight.normal,
           fontSize: duSetFontSize(16),
           height: 1.3,
@@ -72,7 +72,7 @@ class _WelcomePageState extends State<WelcomePage> {
               textAlign: TextAlign.left,
               style: TextStyle(
                 color: AppColors.primaryText,
-                fontFamily: "Avenir",
+                fontFamily: AppFonts.Avenir,
                 fontWeight: FontWeight.normal,
                 fontSize: duSetFontSize(16),
               ),
@@ -96,7 +96,12 @@ class _WelcomePageState extends State<WelcomePage> {
         shape: RoundedRectangleBorder(
           borderRadius: Radii.k6pxRadius,
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(
+            context,
+            "/sign-in",
+          );
+        },
       ),
     );
   }

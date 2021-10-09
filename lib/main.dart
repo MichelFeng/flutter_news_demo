@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_news/routes.dart';
 
 import 'pages/welcome/welcome.dart';
 
@@ -11,8 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Material App',
+      routes: staticRoutes,
       home: WelcomePage(),
       debugShowCheckedModeBanner: false,
     );
